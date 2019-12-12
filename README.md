@@ -1,1 +1,13 @@
 # Workout-Tracker
+
+## Synopsis
+This app is designed for people to check out what others are entering in for a workout and to be able to add in an exercise with a time amount for how long they will do that exercise. This is a basic app which is utilizing mongodb, mongoose and express to create and save the data entered.
+
+## Difficulties
+I ran into some struggles when putting together this app. I had major issues getting this app deployed to heroku and even though I can run it locally and it works fine it isn't able to work with the heroku link. I have to tinker with it more to figure out the issue so that it can work. Also with this assignment being pretty open ended it was tough to nail down the most efficient way to go about writing the code for this app. This is one that I will need to work further on to get it to a place that I am satisfied with. 
+
+## Future Implementations
+Besides getting it working on heroku I want to be able to update the different workouts as well being able to view the exercise name with the duration inline for better looking data.
+
+## Link
+<a href="https://thawing-retreat-17443.herokuapp.com/" target="_blank">Heroku Link Currently Not Working</a>
