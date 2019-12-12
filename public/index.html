@@ -8,18 +8,16 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>Choose between New Workout and Update Workout</header>
 
     <div class="newWorkout">
         <form action="/submit" method="post">
             <h2>New Workout</h2>
             <input type="text" name="workoutName" placeholder="Add Workout Title">
-            <input type="number" name="workoutDuration">In Minutes
-
             <br>
-            
+            <input type="number" name="workoutDuration" placeholder="Number In Minutes">
+            <br>
             <button class="btn" id="submit" type="submit">Submit</button>
-
+            <br>
             <a href="/workouts">See your workouts!</a>
         </form>
     </div>
