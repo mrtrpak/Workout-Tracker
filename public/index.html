@@ -11,11 +11,13 @@
     <header>Choose between New Workout and Update Workout</header>
 
     <div class="newWorkout">
-        <form action="/submit" method="POST">
+        <form action="/submit" method="post">
             <h2>New Workout</h2>
             <input type="text" name="workoutName" placeholder="Add Workout Title">
             <input type="number" name="workoutDuration">
             <button class="btn" id="submit" type="submit">Submit</button>
+
+            <a href="/workouts">See your workouts!</a>
         </form>
     </div>
 </body>
