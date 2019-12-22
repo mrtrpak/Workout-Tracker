@@ -38,6 +38,37 @@ app.post("/submit", ({body}, res) => {
     })
 });
 
+app.put("/workouts/:id", ({ params }, res) => {
+    db.Workout.update(
+        {
+            _id: mongojs.ObjectId(params.id)
+        },
+        {
+            $set: {
+                exerciseName: req.body.exercisePlan,
+                duration: req.body.duration
+            }
+        },
+        (error, data) => {
+            if (error) {
+                res.send(error);
+            } else {
+                res.send(data);
+            }
+        }
+    );
+});
+
+app.delete("/clearall", (req, res) => {
+    db.Workout.remove({}, (error, response) => {
+        if (error) {
+            res.send(error);
+        }  else {
+            res.send(response);
+        }
+    });
+});
+
 app.listen(PORT, () => {
     console.log(`http://localhost:${PORT}`);
 });

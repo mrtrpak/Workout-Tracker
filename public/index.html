@@ -12,14 +12,27 @@
     <div class="newWorkout">
         <form action="/submit" method="post">
             <h2>New Workout</h2>
-            <input type="text" name="workoutName" placeholder="Add Workout Title">
+            <input type="text" name="workoutName" id="workoutName" placeholder="Add Workout Title">
             <br>
-            <input type="number" name="workoutDuration" placeholder="Number In Minutes">
+            <input type="number" name="workoutDuration" id="workoutDuration" placeholder="Number In Minutes">
             <br>
             <button class="btn" id="submit" type="submit">Submit</button>
             <br>
-            <a href="/workouts">See your workouts!</a>
+            <button class="btn" id="delete">Delete All</button>
         </form>
     </div>
+    <div id="workoutList">
+        <h1>Sessions</h1>
+        <section>
+            <div class="container"></div>
+        </section>
+    </divcl>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous">
+    </script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
