@@ -3,10 +3,9 @@ const showWorkouts = () => {
         for (let i = 0; i <data.length; i++) {
             $(".container").prepend(`
             <div class="workouts">
-                <h3 class="eName inputs" contenteditable="false">${data[i].exerciseName}</h3>
-                <p class="eDur inputs" contenteditable="false">Minutes: ${data[i].duration}</p>
-                <button class="updateBtn">Edit Text</button>
-                <button class="submitUpdate" data-id="${data[i]._id}">Submit Edit</button>
+                <h3 class="eName inputs">${data[i].exerciseName}</h3>
+                <p class="eDur inputs">Minutes: ${data[i].duration}</p>
+                <button class="deleteOne" id="${data[i]._id}">Delete</button>
             </div>
             `)
         }
@@ -34,19 +33,16 @@ $("#submit").on("click", () => {
     })
 })
 
-$(document).on("click", ".updateBtn", () => {
-    $(".inputs").attr("contenteditable", true);
-});
-
-$(document).on("click", ".submitUpdate", () => {
-    $(".inputs").attr("contenteditable", false);
+$(document).on("click", ".deleteOne", (e) => {
+    const thisId = e.target.id;
     $.ajax({
-        type: "PUT",
-        url: "/workouts/",
-        dataType: "json"
-    }).then(data => {
-        console.log(data);
+        type: "DELETE",
+        url: "/delete/" + thisId,
+        success: result => {
+            return result;
+        }
     });
+    window.location.reload();
 });
 
 $("#delete").on("click", () => {

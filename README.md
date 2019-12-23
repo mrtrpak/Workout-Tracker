@@ -9,6 +9,10 @@ I ran into some struggles when putting together this app. I had major issues get
 ## Fixes
 I was able to finally get the Heroku link to work. The error was in the models folder that on github the Workout.js file was actually saved in the repo as workout.js. Since I am using windows it was working locally because windows doesn't mind it being capital or not and will read it either way, but in heroku it created it to break. I was able to overwrite the file name in github itself to change that difference and it is working now. Phew!!
 
+This app now shows the added exercises once they have been added and added some basic styles to the boxes. 
+
+I also added in the capability to delete all of the 
+
 ## Future Implementations
 Besides getting it working on heroku I want to be able to update the different workouts as well being able to view the exercise name with the duration inline for better looking data.
 

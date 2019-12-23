@@ -38,6 +38,7 @@ app.post("/submit", ({body}, res) => {
     })
 });
 
+// TODO: needs work to be able to update
 app.put("/workouts/:id", ({ params }, res) => {
     db.Workout.update(
         {
@@ -53,6 +54,20 @@ app.put("/workouts/:id", ({ params }, res) => {
             if (error) {
                 res.send(error);
             } else {
+                res.send(data);
+            }
+        }
+    );
+});
+
+app.delete("/delete/:id", (req, res) => {
+    db.Workout.remove(
+        {
+            _id: req.params.id
+        },
+        (error, data) => {
+            if (error) return error;
+            else {
                 res.send(data);
             }
         }
