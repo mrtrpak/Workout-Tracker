@@ -11,7 +11,7 @@ I was able to finally get the Heroku link to work. The error was in the models f
 
 This app now shows the added exercises once they have been added and added some basic styles to the boxes. 
 
-I also added in the capability to delete all of the 
+I also added in the capability to delete all of the workouts listed from the form "Delete All" button. Also with each workout a delete button is generated which will delete that specific workout only.
 
 ## Future Implementations
 Besides getting it working on heroku I want to be able to update the different workouts as well being able to view the exercise name with the duration inline for better looking data.
