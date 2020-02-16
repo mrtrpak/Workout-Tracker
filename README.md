@@ -17,4 +17,4 @@ I also added in the capability to delete all of the workouts listed from the for
 Besides getting it working on heroku I want to be able to update the different workouts as well being able to view the exercise name with the duration inline for better looking data.
 
 ## Link
-<a href="https://thawing-retreat-17443.herokuapp.com/" target="_blank">Working Heroku Link</a>
+<a href="https://thawing-retreat-17443.herokuapp.com/" target="_blank">Heroku Link</a>
