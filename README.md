@@ -23,6 +23,7 @@ Besides getting it working on heroku I want to be able to update the different w
 - HTML
 - CSS
 - Javascript
+- JQuery
 
 ## Link
 <a href="https://thawing-retreat-17443.herokuapp.com/" target="_blank">Heroku Link</a>
