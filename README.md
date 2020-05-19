@@ -1,5 +1,14 @@
 # Workout-Tracker
 
+## Table of Contents
+
+- [Synopsis](#Synopsis)
+- [Difficulties](#Difficulties)
+- [Fixes](#Fixes)
+- [Future](#Future-Implementations)
+- [Tools Used](#Tools-Used)
+- [Link](#Link)
+
 ## Synopsis
 
 This app is designed for people to check out what others are entering in for a workout and to be able to add in an exercise with a time amount for how long they will do that exercise. This is a basic app which is utilizing mongodb, mongoose and express to create and save the data entered.
